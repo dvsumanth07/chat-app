@@ -28,7 +28,7 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname1, "myapp", "build", "index.html"));
   });
 } else {
-  console.log("not produced");
+  console.log(`Server not started ${process.env.NODE_ENV}`);
   app.get("/", (req, res) => {
     res.send("API is running");
   });
