@@ -16,7 +16,7 @@ export default function Login() {
   const [loading, setLoading] = useState();
   const toast = useToast();
   const history = useHistory();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const submitHandler = async () => {
     setLoading(true);
     if (!email || !password) {
@@ -54,7 +54,7 @@ export default function Login() {
       setUser(data);
       localStorage.setItem("userInfo", JSON.stringify(data));
       setLoading(false);
-      navigate("/chats");
+      history.push("/chats");
     } catch (error) {
       toast({
         title: "Error Occured!",
