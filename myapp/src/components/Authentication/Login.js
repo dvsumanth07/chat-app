@@ -39,7 +39,7 @@ export default function Login() {
       };
 
       const { data } = await axios.post(
-        " https://c-connect-messenger.onrender.com/api/user/login",
+        " https://c-c-messenger.onrender.com/api/user/login",
         { email, password },
         config
       );
