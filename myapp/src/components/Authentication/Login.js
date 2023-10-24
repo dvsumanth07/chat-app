@@ -3,6 +3,7 @@ import { FormControl, FormLabel } from "@chakra-ui/form-control";
 import { Input, InputGroup, InputRightElement } from "@chakra-ui/input";
 import { VStack } from "@chakra-ui/layout";
 import { useState } from "react";
+import { ChatState } from "../../Context/ChatProvider";
 import axios from "axios";
 import { useToast } from "@chakra-ui/react";
 import { useHistory, useNavigate } from "react-router-dom";
