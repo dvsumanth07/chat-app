@@ -46,7 +46,7 @@ function SignUp() {
         },
       };
       const { data } = await axios.post(
-        "http://localhost:5000/api/user",
+        "https://c-c-messenger.onrender.com/api/user",
         {
           name,
           email,
