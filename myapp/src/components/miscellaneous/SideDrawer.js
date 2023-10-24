@@ -74,7 +74,7 @@ function SideDrawer() {
       };
       console.log(search);
       const { data } = await axios.get(
-        `http://localhost:5000/api/user?search=${search}`,
+        ` https://c-c-messenger.onrender.com/api/user?search=${search}`,
         config
       );
       setLoading(false);
@@ -99,7 +99,7 @@ function SideDrawer() {
         },
       };
       const { data } = await axios.post(
-        "http://localhost:5000/api/chat",
+        " https://c-c-messenger.onrender.com/api/chat",
         { userId },
         config
       );
