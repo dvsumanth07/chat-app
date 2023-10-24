@@ -66,7 +66,7 @@ function SignUp() {
 
       setPicLoading(false);
       console.log("history");
-      history.push("/chats");
+      history.push("/");
       console.log("nohistory");
     } catch (error) {
       console.log(error);
