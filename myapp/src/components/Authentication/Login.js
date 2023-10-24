@@ -16,6 +16,7 @@ export default function Login() {
   const [loading, setLoading] = useState();
   const toast = useToast();
   const history = useHistory();
+  const { setUser } = ChatState();
   // const navigate = useNavigate();
   const submitHandler = async () => {
     setLoading(true);
@@ -51,7 +52,7 @@ export default function Login() {
         isClosable: true,
         position: "bottom",
       });
-      // setUser(data);
+      setUser(data);
       localStorage.setItem("userInfo", JSON.stringify(data));
       setLoading(false);
       history.push("/chats");
